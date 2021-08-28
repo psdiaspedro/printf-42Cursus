@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:50:12 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/28 17:10:46 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/28 17:12:34 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,6 @@ void ft_is_spec(t_format *fmt, t_holder *holder)
 		fmt->len++;
 	}
 	fmt->i++;
-	// if(fmt->format[fmt->i] == 'c')
-	// if(fmt->format[fmt->i] == 's')
-	// if(fmt->format[fmt->i] == 'p')
-	// if(fmt->format[fmt->i] == 'i')
-	// if(fmt->format[fmt->i] == 'u')
-	// if(fmt->format[fmt->i] == 'x')
-	// if(fmt->format[fmt->i] == 'X')
-	// if(fmt->format[fmt->i] == '%')
 }
 
 void ft_parse(t_format *fmt, t_holder *holder)
