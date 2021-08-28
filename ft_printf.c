@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:50:02 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/28 12:50:05 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/28 13:01:10 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,7 @@ int ft_vprintf(va_list args, const char *format)
 	while(fmt->format[fmt->i])
 	{
 		if(fmt->format[fmt->i] == '%');
-		{
 			ft_placeholder(fmt);
-		}
 		else
 		{
 			fmt->len += write(1, &fmt->format[fmt->i], 1);
