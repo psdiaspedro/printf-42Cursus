@@ -1,37 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_convert_c.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/30 13:55:50 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/12 11:36:17 by paugusto         ###   ########.fr       */
+/*   Created: 2021/08/28 16:50:30 by paugusto          #+#    #+#             */
+/*   Updated: 2021/08/28 19:14:02 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/ft_printf.h"
 
-char	*ft_strchr(const char *s, int c)
+void ft_convert_c(t_format *fmt, t_holder *holder)
 {
-	size_t	i;
-	char	*ptr;
-	char x;
+	char ch;
 
-	ptr = (char *)s;
-	x = (char)c;
-	i = 0;
-	if (x == '\0')
-	{
-		i = ft_strlen(ptr);
-		return (&ptr[i]);
-	}
-	while (ptr[i] != '\0')
-	{
-		if (ptr[i] == x)
-			return (&ptr[i]);
-		i++;
-	}
-	ptr = NULL;
-	return (ptr);
+	ch = va_arg(fmt->args, char);
+	holder->argument = malloc(sizeof(char));
+	if(!holder->argument)
+		return;
+	holder->argument = ch;
+	holder->len++;
 }
+

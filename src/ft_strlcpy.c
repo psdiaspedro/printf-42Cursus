@@ -6,11 +6,12 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 17:48:53 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/11 10:38:11 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/28 19:00:38 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft/libft.h"
+
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
