@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:50:12 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/28 17:12:34 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/28 17:44:53 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ void ft_parse(t_format *fmt, t_holder *holder)
 {
 	if (holder->specifier == 'c')
 		ft_convert_c(fmt, holder);
-	// else if (h->specifier == 's')
-	// 	ft_convert_s(fmt, h);
+	else if (holder->specifier == 's')
+		ft_convert_s(fmt, holder);
 	// else if (h->specifier == 'p')
 	// 	ft_convert_p(fmt, h);
 	// else if (h->specifier == 'd' || h->specifier == 'i')
