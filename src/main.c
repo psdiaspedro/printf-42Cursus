@@ -1,8 +1,9 @@
 #include "../include/ft_printf.h"
+#include <stdio.h>
 
 int main(void)
 {
-	char ch = 'a';
-	ft_printf("%c", ch);
+	ft_printf("O %cedro gosta de %s", "Pedro", "Codar");
+	// printf("%c", "P");
 	return (0);
 }

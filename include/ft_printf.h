@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:50:07 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/28 18:47:11 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/29 12:12:46 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "../libft/libft.h"
+#include <wchar.h>
 
 typedef struct s_format
 {
@@ -30,7 +31,7 @@ typedef struct s_format
 
 typedef struct s_holder
 {
-	const char *argument; //armazena o argumento
+	char		*argument; //armazena o argumento
 	char		specifier; //armazena o specifier
 	size_t		len; //len do argumento
 } t_holder;

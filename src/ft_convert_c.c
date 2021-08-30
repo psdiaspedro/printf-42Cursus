@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 16:50:30 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/28 19:14:02 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/29 12:21:00 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ void ft_convert_c(t_format *fmt, t_holder *holder)
 {
 	char ch;
 
-	ch = va_arg(fmt->args, char);
+	ch = (wint_t)va_arg(fmt->args, wint_t);
 	holder->argument = malloc(sizeof(char));
 	if(!holder->argument)
 		return;
-	holder->argument = ch;
+	holder->argument[0] = ch;
 	holder->len++;
 }
 
