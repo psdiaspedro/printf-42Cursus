@@ -2,14 +2,12 @@
 
 void ft_convert_d_i(t_format *fmt, t_holder *holder)
 {
-	long int arg;
-	int sign;
+	int arg;
 
-	sign = -1;
 	arg = va_arg(fmt->args, int);
-	if(arg < 0)
-		sign *= -1;
-	
-
-	return ;
+	holder->argument = malloc(sizeof(ft_strlen(ft_itoa(arg))) + 1);
+	if(!holder->argument)
+		return ;
+	holder->argument = ft_itoa(arg);
+	holder->len = ft_strlen(holder->argument);
 }

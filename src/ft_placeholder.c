@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:50:12 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/28 19:16:39 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/30 16:45:20 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,20 +31,18 @@ void ft_parse(t_format *fmt, t_holder *holder)
 		ft_convert_c(fmt, holder);
 	else if (holder->specifier == 's')
 		ft_convert_s(fmt, holder);
-	// else if (h->specifier == 'p')
-	// 	ft_convert_p(fmt, h);
-	// else if (h->specifier == 'd' || h->specifier == 'i')
-	// 	ft_convert_d_i(fmt, h);
-	// else if (h->specifier == 'u')
-	// 	ft_convert_ux(fmt, h, DECIMAL_BASE);
-	// else if (h->specifier == 'x')
-	// 	ft_convert_ux(fmt, h, HEXADECIMAL_L_BASE);
-	// else if (h->specifier == 'X')
-	// 	ft_convert_ux(fmt, h, HEXADECIMAL_U_BASE);
-	// else if (h->specifier == 'o')
-	// 	ft_convert_ux(fmt, h, OCTAL_BASE);
-	// else
-	// 	ft_convert_pct(h);
+	else if (holder->specifier == 'd' || holder->specifier == 'i')
+		ft_convert_d_i(fmt, holder);
+	else if (holder->specifier == 'p')
+		ft_convert_p(fmt, holder);
+	else if (holder->specifier == 'u')
+		ft_convert_u(fmt, holder, DECIMAL_BASE);
+	else if (holder->specifier == 'x')
+		ft_convert_x(fmt, holder, HEXA_L_BASE);
+	else if (holder->specifier == 'X')
+		ft_convert_ux(fmt, holder, HEXA_U_BASE);
+	else if (holder->specifier == '%')
+		ft_convert_pct(holder);
 }
 void ft_placeholder(t_format *fmt)
 {

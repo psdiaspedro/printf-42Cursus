@@ -3,7 +3,10 @@
 
 int main(void)
 {
-	ft_printf("O %cedro gosta de %s", "Pedro", "Codar");
-	// printf("%c", "P");
+	unsigned int a= -4;
+
+	// ft_printf("%u\n", a);
+	printf("%x", 5345453);
 	return (0);
 }
+

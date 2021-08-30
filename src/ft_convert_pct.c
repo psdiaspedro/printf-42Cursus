@@ -1,6 +1,13 @@
 #include "../include/ft_printf.h"
 
-void ft_convert_pct(t_holder *h)
+void ft_convert_pct(t_holder *holder)
 {
-	return ;
+	char ch;
+
+	ch = '%';
+	holder->argument = malloc(sizeof(char));
+	if(!holder->argument)
+		return;
+	holder->argument[0] = ch;
+	holder->len++;
 }
