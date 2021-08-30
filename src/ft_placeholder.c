@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:50:12 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/30 16:45:20 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/30 16:58:36 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ void ft_parse(t_format *fmt, t_holder *holder)
 	else if (holder->specifier == 'u')
 		ft_convert_u(fmt, holder, DECIMAL_BASE);
 	else if (holder->specifier == 'x')
-		ft_convert_x(fmt, holder, HEXA_L_BASE);
+		ft_convert_x(fmt, holder);
 	else if (holder->specifier == 'X')
-		ft_convert_ux(fmt, holder, HEXA_U_BASE);
+		ft_convert_ux(fmt, holder);
 	else if (holder->specifier == '%')
 		ft_convert_pct(holder);
 }
