@@ -1,16 +1,26 @@
-NAME = libftprintf.a
+NAME = printf.a
 
 LIBFT_DIR = ./libft
 LIBFT = $(LIBFT_DIR)/libft.a
-INCLUDES = -I./include -I./libft/libft.a
+INCLUDE_DIR = -I./include -I./libft/libft.a
 
 CC = clang
 CFLAGS = -Wall -Wextra -Werror
 RM = /bin/rm -f
 
-SRC = src/ft_printf.c
-
 OBJECTS = $(SRC:.c=.o)
+
+SRC = ./src/ft_convert_c.c\
+		./src/ft_convert_d_i.c\
+		./src/ft_convert_p.c\
+		./src/ft_convert_pct.c\
+		./src/ft_convert_s.c\
+		./src/ft_convert_u.c\
+		./src/ft_convert_u.c\
+		./src/ft_convert_x.c\
+		./src/ft_init.c\
+		./src/ft_placeholder.c\
+		./src/ft_printf.c\
 
 all: $(NAME)
 

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_uitoa_base.c                                    :+:      :+:    :+:   */
+/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 15:02:54 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/30 15:55:06 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 08:54:35 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static size_t	nb_len(unsigned long nbr)
 	return (len);
 }
 
-char	*ft_uitoa_base(unsigned long nbr, char *base)
+char	*ft_itoa_base(unsigned long nbr, char *base)
 {
 	char	*str;
 	size_t	len_base;

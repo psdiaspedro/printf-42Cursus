@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 08:43:50 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/31 08:44:27 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 08:55:17 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_convert_u(t_format *fmt, t_holder *holder, char *base)
 	char			*ptr;
 
 	nbr = va_arg(fmt->args, unsigned int);
-	ptr = ft_uitoa_base((unsigned long)nbr, base);
+	ptr = ft_itoa_base((unsigned long)nbr, base);
 	holder->argument = malloc(sizeof(char) * ft_strlen(ptr));
 	if (!holder->argument)
 		return ;
