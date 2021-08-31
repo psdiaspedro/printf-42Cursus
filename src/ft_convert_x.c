@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/31 08:43:46 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/31 09:47:21 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 09:51:17 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ void	ft_convert_ux(t_format *fmt, t_holder *holder)
 	free(address);
 	holder->len = ft_strlen(holder->argument);
 }
-
 
 void	ft_convert_x(t_format *fmt, t_holder *holder)
 {

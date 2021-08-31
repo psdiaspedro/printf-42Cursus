@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 17:49:06 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/30 13:23:44 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 09:56:09 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	nb_len(long int n)
 	if (n == 0)
 		len = 1;
 	if (n < 0)
- 	{
+	{
 		n *= -1;
 		len ++;
 	}

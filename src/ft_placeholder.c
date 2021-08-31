@@ -6,10 +6,9 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:50:12 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/31 08:45:36 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 09:55:15 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../include/ft_printf.h"
 
@@ -25,7 +24,7 @@ void	ft_is_spec(t_format *fmt, t_holder *holder)
 	fmt->i++;
 }
 
-void ft_parse(t_format *fmt, t_holder *holder)
+void	ft_parse(t_format *fmt, t_holder *holder)
 {
 	if (holder->specifier == 'c')
 		ft_convert_c(fmt, holder);
@@ -44,7 +43,8 @@ void ft_parse(t_format *fmt, t_holder *holder)
 	else if (holder->specifier == '%')
 		ft_convert_pct(holder);
 }
-void ft_placeholder(t_format *fmt)
+
+void	ft_placeholder(t_format *fmt)
 {
 	t_holder	*holder;
 

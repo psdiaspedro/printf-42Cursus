@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 15:02:54 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/31 08:54:35 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 09:54:45 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static size_t	nb_len(unsigned long nbr)
 	if (nbr == 0)
 		len = 1;
 	if (nbr < 0)
- 	{
+	{
 		nbr *= -1;
 		len ++;
 	}
@@ -68,8 +68,7 @@ char	*ft_itoa_base(unsigned long nbr, char *base)
 	if (nbr < 0)
 	{
 		nbr *= -1;
-		str[i] = '-';
-		i++;
+		str[i++] = '-';
 	}
 	while (nbr)
 	{

@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 13:55:50 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/28 18:58:45 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 09:53:08 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
 	char	*ptr;
-	char x;
+	char	x;
 
 	ptr = (char *)s;
 	x = (char)c;

@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 17:45:11 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/31 08:43:21 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 09:55:41 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	ft_convert_s(t_format *fmt, t_holder *holder)
 {
 	char	*string;
+
 	string = ft_strdup(va_arg(fmt->args, char *));
 	if (!string)
 		return ;

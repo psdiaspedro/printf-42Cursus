@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:50:07 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/31 08:47:37 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 09:52:43 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@
 # define HEX_L_PREFIX "0x"
 # define HEX_U_PREFIX "0X"
 
-#include <stdarg.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include "../libft/libft.h"
-#include <wchar.h>
+# include <stdarg.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include "../libft/libft.h"
+# include <wchar.h>
 
 typedef struct s_format
 {
@@ -48,7 +48,7 @@ void		ft_placeholder(t_format *fmt);
 void		ft_parse(t_format *fmt, t_holder *holder);
 void		ft_is_spec(t_format *fmt, t_holder *holder);
 t_format	*ft_init_format(va_list args, const char *format);
-t_holder	*ft_init_holder();
+t_holder	*ft_init_holder(void);
 void		ft_convert_s(t_format *fmt, t_holder *holder);
 void		ft_convert_c(t_format *fmt, t_holder *holder);
 void		ft_convert_d_i(t_format *fmt, t_holder *holder);
