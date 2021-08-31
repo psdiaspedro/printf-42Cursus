@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/02 11:28:38 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/28 18:58:51 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 14:16:53 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strdup(const char *src)
 	int		i;
 
 	i = 0;
+	if(!src)
+		return (NULL);
 	dest = (char *)malloc(ft_strlen(src) * sizeof(char) + 1);
 	if (!dest)
 		return (NULL);
