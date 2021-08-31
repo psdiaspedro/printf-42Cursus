@@ -6,16 +6,16 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 12:50:12 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/30 16:58:36 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 08:45:36 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "../include/ft_printf.h"
 
-void ft_is_spec(t_format *fmt, t_holder *holder)
+void	ft_is_spec(t_format *fmt, t_holder *holder)
 {
-	if(ft_strchr(FORMAT_SPEC, fmt->format[fmt->i]))
+	if (ft_strchr(FORMAT_SPEC, fmt->format[fmt->i]))
 		holder->specifier = fmt->format[fmt->i];
 	else
 	{
@@ -46,12 +46,12 @@ void ft_parse(t_format *fmt, t_holder *holder)
 }
 void ft_placeholder(t_format *fmt)
 {
-	t_holder *holder;
+	t_holder	*holder;
 
 	fmt->i++;
 	holder = ft_init_holder();
 	ft_is_spec(fmt, holder);
-	if(holder->specifier)
+	if (holder->specifier)
 	{
 		ft_parse(fmt, holder);
 		fmt->len += write(1, holder->argument, holder->len);
