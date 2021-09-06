@@ -15,7 +15,7 @@
 void	ft_convert_ux(t_format *fmt, t_holder *holder)
 {
 	unsigned int	ptr;
-	char		*address;
+	char			*address;
 
 	ptr = (unsigned int)va_arg(fmt->args, unsigned int);
 	if (!ptr)
@@ -29,7 +29,7 @@ void	ft_convert_ux(t_format *fmt, t_holder *holder)
 void	ft_convert_x(t_format *fmt, t_holder *holder)
 {
 	unsigned int	ptr;
-	char		*address;
+	char			*address;
 
 	ptr = (unsigned int)va_arg(fmt->args, unsigned int);
 	if (!ptr)

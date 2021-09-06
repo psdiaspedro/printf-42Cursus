@@ -17,7 +17,7 @@ void	ft_convert_s(t_format *fmt, t_holder *holder)
 	char	*string;
 
 	string = ft_strdup(va_arg(fmt->args, char *));
-	if(!string)
+	if (!string)
 		string = ft_strdup("(null)");
 	holder->argument = malloc(sizeof(char) * (ft_strlen(string) + 1));
 	if (!holder->argument)
